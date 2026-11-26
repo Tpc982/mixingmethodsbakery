@@ -1,0 +1,414 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mixing Methods Bakery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--cream:#F8F4EC;
+--sage:#8C9B83;
+--brown:#5F4331;
+--gold:#C7A66A;
+--white:#FFFFFF;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat', sans-serif;
+background:var(--cream);
+color:var(--brown);
+line-height:1.8;
+}
+
+section{
+padding:80px 10%;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display', serif;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.logo{
+width:240px;
+max-width:90%;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:750px;
+font-size:1.1rem;
+margin-bottom:30px;
+}
+
+.button{
+background:var(--sage);
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+}
+
+.button:hover{
+opacity:0.9;
+}
+
+.heading{
+text-align:center;
+margin-bottom:40px;
+}
+
+.heading h2{
+font-size:2.6rem;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.contact{
+background:white;
+}
+
+form{
+max-width:700px;
+margin:auto;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-family:inherit;
+}
+
+textarea{
+height:180px;
+}
+
+button{
+background:var(--sage);
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+font-size:1rem;
+}
+
+footer{
+background:var(--sage);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.highlight{
+color:var(--sage);
+font-weight:600;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.heading h2{
+font-size:2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="logo.png" alt="Mixing Methods Bakery Logo" class="logo">
+
+<h1>Mixing Methods Bakery</h1>
+
+<p>
+Where Science Meets Sweetness.
+Freshly baked cookies, cakes and sweet treats made with creativity,
+precision and a love of baking.
+</p>
+
+<a href="#contact" class="button">Request a Quote</a>
+
+</section>
+
+<section>
+
+<div class="heading">
+<h2>Our Story</h2>
+</div>
+
+<div class="card">
+
+<p>
+Mixing Methods Bakery was born from two passions:
+<span class="highlight">science and baking.</span>
+</p>
+
+<br>
+
+<p>
+The name "Mixing Methods" is inspired by the techniques and processes that form the foundation of baking. Just as science relies on experimentation, precision and understanding how ingredients interact, baking is its own form of delicious chemistry.
+</p>
+
+<br>
+
+<p>
+Every recipe is carefully developed using the same curiosity and attention to detail that science encourages. From perfecting cookie textures to creating custom cakes and sweet treats, each bake is crafted with a balance of creativity and method.
+</p>
+
+<br>
+
+<p>
+What started as a love of baking has grown into a small business dedicated to creating memorable desserts for celebrations, gifts and everyday indulgence.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="heading">
+<h2>Featured Cakes</h2>
+</div>
+
+<div class="gallery">
+
+<img src="cake1.jpg">
+<img src="cake2.jpg">
+<img src="cake3.jpg">
+<img src="cake4.jpg">
+<img src="cake5.jpg">
+<img src="cake6.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<div class="heading">
+<h2>Custom Cookies</h2>
+</div>
+
+<div class="card">
+
+<p>
+Decorated sugar cookies are available in a range of themes, colours and designs perfect for birthdays, weddings, baby showers, corporate events and holiday celebrations.
+</p>
+
+<br>
+
+<p>
+Each cookie is individually decorated and designed to suit your occasion.
+</p>
+
+<br>
+
+<img src="cookies.jpg" style="width:100%; border-radius:15px;">
+
+</div>
+
+</section>
+
+<section>
+
+<div class="heading">
+<h2>More Than Just Cookies</h2>
+</div>
+
+<div class="card">
+
+<p>
+While custom cookies and cakes are among our most popular offerings, they're only the beginning.
+</p>
+
+<br>
+
+<p>
+Whether you're after cupcakes, macarons, dessert boxes, wedding favours, corporate gifts, market treats or something completely custom, we'd love to hear your ideas.
+</p>
+
+<br>
+
+<p>
+If you know exactly what you're looking for, send through a quote request with as much detail as possible.
+</p>
+
+<br>
+
+<p>
+Photos, inspiration images, colours, themes and flavour ideas are always welcome.
+</p>
+
+<br>
+
+<p>
+<strong>No idea is too simple or too creative.</strong>
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="heading">
+<h2>Why Choose Mixing Methods Bakery?</h2>
+</div>
+
+<div class="features">
+
+<div class="feature">
+<h3>Handmade in Melbourne</h3>
+<p>Small-batch creations made with care and attention to detail.</p>
+</div>
+
+<div class="feature">
+<h3>Custom Orders Welcome</h3>
+<p>Designed around your celebration and vision.</p>
+</div>
+
+<div class="feature">
+<h3>Quality Ingredients</h3>
+<p>Made using ingredients selected for flavour and freshness.</p>
+</div>
+
+<div class="feature">
+<h3>Science Meets Creativity</h3>
+<p>Precision, experimentation and artistry combined.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="heading">
+<h2>Let's Create Something Sweet</h2>
+</div>
+
+<p style="text-align:center;max-width:800px;margin:0 auto 40px;">
+Whether you're planning a birthday, wedding, baby shower, engagement, corporate event or simply want something delicious for a special occasion, Mixing Methods Bakery would love to help.
+</p>
+
+<form action="https://formsubmit.co/mixingmethodsbakery@gmail.com" method="POST">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+
+<input type="email" name="Email" placeholder="Email Address" required>
+
+<input type="text" name="Phone Number" placeholder="Phone Number">
+
+<input type="date" name="Event Date">
+
+<select name="Order Type">
+
+<option>Cake</option>
+<option>Cookies</option>
+<option>Cupcakes</option>
+<option>Macarons</option>
+<option>Dessert Box</option>
+<option>Other</option>
+
+</select>
+
+<textarea name="Message" placeholder="Tell us about your order"></textarea>
+
+<button type="submit">Send Enquiry</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>Mixing Methods Bakery</h3>
+
+<p>mixingmethodsbakery@gmail.com</p>
+
+<p>@mixingmethodsbakery</p>
+
+</footer>
+
+</body>
+</html>
